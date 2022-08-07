@@ -27,7 +27,7 @@ public class OrderServiceImpl implements IOrderService {
 
 	private OrderDetail getOrderDetail(MasterBarang masterBarang, int jumlah) {
 		OrderDetail orderdetail = new OrderDetail(masterBarang.getNamaBarang(), masterBarang.getHargaSatuan(), jumlah);
-		// TODO : code here
+		// TODO optional : code here
 
 		return orderdetail;
 	}

@@ -13,6 +13,8 @@ public class OrderDetail {
 		this.jumlah = jumlah;
 	}
 
+	// TODO : optional code here
+
 	public String getNamaBarang() {
 		return namaBarang;
 	}
