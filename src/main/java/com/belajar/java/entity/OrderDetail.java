@@ -7,6 +7,12 @@ public class OrderDetail {
 	private int jumlah;
 	private int totalHarga;
 
+	public OrderDetail(String namaBarang, int hargaSatuan, int jumlah) {
+		this.namaBarang = namaBarang;
+		this.hargaSatuan = hargaSatuan;
+		this.jumlah = jumlah;
+	}
+
 	public String getNamaBarang() {
 		return namaBarang;
 	}
