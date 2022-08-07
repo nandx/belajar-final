@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Menu Order</title>
+</head>
+<body>
+	<table border="1">
+		<thead>
+			<tr>
+				<td>No</td>
+				<td>Nama Barang</td>
+				<td>Jumlah</td>
+				<td>Harga Satuan</td>
+				<td>Total Harga</td>
+			</tr>
+		</thead>
+
+		<tr th:each="data, istat: ${listorder}">
+			<td th:text="${istat.index + 1}"></td>
+			<td th:text="${data.namaBarang}"></td>
+			<td th:text="${data.jumlah}"></td>
+			<td th:text="${data.hargaSatuan}"></td>
+			<td th:text="${data.totalHarga}"></td>
+		</tr>
+	</table>
+
+	<br> Total Tagihan :
+	<label th:text="${totaltagihan}"></label>
+</body>
+</html>
